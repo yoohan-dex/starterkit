@@ -4,7 +4,20 @@
   "description": "Carlos Cuesta web starterkit, including my workflow with gulp, jade, scss, babel and nodejs",
   "main": "gulpfile.js",
   "xo": {
-    "esnext": true
+    "esnext": true,
+    "globals": [
+      "$"
+    ],
+    "rule": {
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "indent": [
+        "error",
+        2
+      ]
+    }
   },
   "scripts": {
     "dev": "gulp",
